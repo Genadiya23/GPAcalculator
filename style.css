@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box; /* Includes padding and borders in width and height */
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #018f8c;
+}
+
+.main {
+    background-color: #ffefd9;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10%;
+    overflow: visible;
+}
+
+.main h1 {
+    color: #ff7e36;
+    font-size: 2rem;
+}
+
+.checkbox {
+    width: auto;
+    margin: 1rem;
+}
+
+.course, .credits, .grade {
+    height: 3rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 1px solid #f7c050;
+    padding-left: 0.5rem;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+/* Additional styles for specific elements */
+.course, .credits {
+    width: 15rem;
+}
+
+.course::placeholder, .credits::placeholder {
+    font-size: 1rem;
+    color: #888;
+}
+
+.grade {
+    width: 4rem;
+    text-align-last: center; /* Centers text in the dropdown */
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Take full width */
+    flex-direction: column;
+
+}
+
+.button-container #addrow, .button-container #reset, .button-container #calculate {
+    width: 8rem;
+    height: 3rem;
+    background-color: #ff7e36;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 2px solid white; /* Explicit border */
+    color: white;
+    cursor: pointer;
+}
+
+#addrow:focus, #reset:focus, #calculate:focus {
+    outline: none; /* Removes default focus outline */
+}
+
+#addrow{
+    margin-top:1rem;
+}
+
+#output{
+    font-size: 2rem;
+    color:#018f8c;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .main {
+        width: 90%; /* Make the main container wider on small screens */
+        padding: 5%; /* Adjust padding for smaller screens */
+    }
+
+    .course, .credits {
+        width: 100%; /* Make inputs full-width */
+        height: 2.5rem; /* Smaller height */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .grade {
+        width: 80%; /* Adjust dropdown width */
+        height: 2.5rem; /* Smaller height */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    #addrow, #reset, #calculate {
+        width: 100%; /* Make buttons full-width */
+        height: 2.5rem; /* Smaller height */
+        font-size: 0.9rem; /* Smaller font size */
+        margin-top: 0.5rem; /* Add spacing between buttons */
+    }
+}

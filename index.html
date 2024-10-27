@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="gpa.js" defer></script>
+  <title>Gpa Calculator</title>
+</head>
+
+<!-- <style>
+    table, th, td {
+      border:1px solid black;
+    }
+</style> -->
+    
+
+<body>
+  <div class ="main">
+    <h1> GPA Calculator</h1>
+    <table id="myTable" >
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Course</th>
+          <th>Grade</th>
+          <th>Credits</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="checkbox"></td>
+          <td><input type="text"  placeholder="Course Name" class="course"></td>
+          <td> 
+            <select name="grades" class="grade">
+                <option value="aplus">A+</option>
+                <option value="a">A</option>
+                <option value="aminus">A-</option>
+                <option value="bplus">B+</option>
+                <option value="b">B</option>
+                <option value="bminus">B-</option>
+                <option value="cplus">C+</option>
+                <option value="c">C</option>
+                <option value="cminus">C-</option>
+                <option value="dplus">D+</option>
+                <option value="d">D</option>
+                <option value="dminus">D-</option>
+                <option value="f">F</option>
+            </select>
+        </td>
+          <td><input type="text"  placeholder="Number of Credits" class ="credits"></td>
+          <td><button class="delete-btn" onclick="deleteRow(this)">X</button></td>
+        </tr>
+          <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td><input type="text"  placeholder="Course Name" class="course"></td>
+            <td> 
+              <select name="grades" class="grade">
+                  <option value="aplus">A+</option>
+                  <option value="a">A</option>
+                  <option value="aminus">A-</option>
+                  <option value="bplus">B+</option>
+                  <option value="b">B</option>
+                  <option value="bminus">B-</option>
+                  <option value="cplus">C+</option>
+                  <option value="c">C</option>
+                  <option value="cminus">C-</option>
+                  <option value="dplus">D+</option>
+                  <option value="d">D</option>
+                  <option value="dminus">D-</option>
+                  <option value="f">F</option>
+              </select>
+          </td>
+            <td><input type="text"  placeholder="Number of Credits" class ="credits"></td>
+            <td><button class="delete-btn" onclick="deleteRow(this)">X</button></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td><input type="text"  placeholder="Course Name" class="course"></td>
+            <td> 
+              <select name="grades" class="grade">
+                  <option value="aplus">A+</option>
+                  <option value="a">A</option>
+                  <option value="aminus">A-</option>
+                  <option value="bplus">B+</option>
+                  <option value="b">B</option>
+                  <option value="bminus">B-</option>
+                  <option value="cplus">C+</option>
+                  <option value="c">C</option>
+                  <option value="cminus">C-</option>
+                  <option value="dplus">D+</option>
+                  <option value="d">D</option>
+                  <option value="dminus">D-</option>
+                  <option value="f">F</option>
+              </select>
+          </td>
+            <td><input type="text"  placeholder="Number of Credits" class ="credits"></td>
+            <td><button class="delete-btn" onclick="deleteRow(this)">X</button></td>
+          </tr>
+    </table>
+    
+    <div class="button-container">
+      <button id="addrow" onclick="addRow()">Add Row</button>
+      <button id="calculate" onclick="calculate()">Calculate</button>
+      <button id="reset" onclick="reset()">Reset</button>
+  </div>
+    <div id="output">
+      My Gpa is ...
+    </div>
+  </div>
+</body>
